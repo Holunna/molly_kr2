@@ -1,0 +1,76 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autumn Fashion 2024 - Home</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            if (link.href === window.location.href) {
+              link.classList.add("active");
+            }
+          });
+        });
+    </script>
+
+    <main>
+      <h1>Welcome to Autumn Fashion 2024</h1>
+      <p>
+        This is your ultimate guide to staying fashionable this autumn season.
+        Explore the latest trends, accessories, and outerwear that will define
+        the fall of 2024.
+      </p>
+
+      <h2>Made by Polina Didik</h2>
+      <a href="javascript:void(0);" onclick="openImageWindow();">
+        <img
+          src="images/polina_thumbnail.png"
+          alt="Polina Thumbnail"
+          width="100"
+        />
+      </a>
+
+      <script>
+        function openImageWindow() {
+          var width = 768;
+          var height = 1024;
+          var left = (screen.width - width) / 2;
+          var top = (screen.height - height) / 2;
+          window.open(
+            "images/polina.png",
+            "PolinaImage",
+            "width=" +
+              width +
+              ", height=" +
+              height +
+              ", top=" +
+              top +
+              ", left=" +
+              left
+          );
+        }
+      </script>
+    </main>
+
+    <script>
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        if (link.href === window.location.href) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

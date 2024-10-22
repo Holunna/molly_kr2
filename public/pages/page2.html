@@ -1,0 +1,47 @@
+<!-- page2.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autumn Fashion 2024 - Accessories</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            if (link.href === window.location.href) {
+              link.classList.add("active");
+            }
+          });
+        });
+    </script>
+
+    <main>
+      <h1>Must-Have Accessories for Autumn 2024</h1>
+      <ul>
+        <li>Chunky scarves</li>
+        <li>Leather gloves</li>
+        <li>Oversized sunglasses</li>
+        <li>Bold jewelry</li>
+      </ul>
+    </main>
+
+    <script>
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        if (link.href === window.location.href) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

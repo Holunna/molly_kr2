@@ -1,0 +1,159 @@
+<!-- page1.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autumn Fashion 2024 - Trends</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            if (link.href === window.location.href) {
+              link.classList.add("active");
+            }
+          });
+        });
+    </script>
+
+    <main>
+      <h1>Autumn Fashion 2024 Trends</h1>
+
+      <!-- Internal Navigation Links -->
+
+      <p>
+        <a href="#trends">Trends</a> | <a href="#materials">Materials</a> |
+        <a href="#colors">Colors</a> |
+        <a href="#back-to-top">Back to Top</a>
+      </p>
+
+      <!-- Section 1: Top Trends -->
+
+      <h2 id="trends">Top Trends</h2>
+      <p>
+        This season, oversized coats, bold accessories, and layering are the
+        main trends in autumn fashion 2024. The focus is on combining comfort
+        with elegance, using natural tones and statement pieces to make an
+        impact.
+      </p>
+
+      <ol>
+        <li>
+          Layered outfits: Multiple layers add depth and warmth while
+          maintaining a chic, effortless look.
+        </li>
+        <li>
+          Statement outerwear: Bold coats and jackets dominate the runways,
+          featuring unique textures and silhouettes.
+        </li>
+        <li>
+          Bold accessories: Large bags, oversized scarves, and standout footwear
+          complement the neutral clothing palette.
+        </li>
+      </ol>
+
+      <img
+        src="../images/trends.png"
+        alt="Models showcasing the latest autumn trends with layered outfits, statement outerwear, and bold accessories"
+        width="600"
+      />
+
+      <!-- Section 2: Trending Materials -->
+
+      <h2 id="materials">Trending Materials</h2>
+      <p>
+        Natural materials such as wool, leather, and cotton blends are essential
+        this autumn. Designers are prioritizing fabrics that offer both warmth
+        and durability while embracing intricate patterns.
+      </p>
+
+      <ul>
+        <li>
+          Wool: Perfect for outerwear, wool provides warmth and can be styled in
+          many different ways.
+        </li>
+        <li>
+          Leather: Leather jackets and accessories bring a sophisticated edge to
+          the autumn wardrobe.
+        </li>
+        <li>
+          Cotton blends: Comfortable and versatile, cotton blends are a staple
+          for layering and casual looks.
+        </li>
+      </ul>
+
+      <img
+        src="../images/materials.png"
+        alt="A collage of different wool and leather textures for autumn 2024 trends"
+        width="600"
+      />
+
+      <!-- Section 3: Colors -->
+
+      <h2 id="colors">Autumn Colors</h2>
+      <p>
+        The color palette for autumn 2024 is dominated by muted earthy tones
+        alongside vibrant accents. Designers are using these colors to highlight
+        different styles and layers in their collections.
+      </p>
+
+      <ul>
+        <li>
+          Warm Colors:
+          <ul>
+            <li>
+              Burnt Orange: A rich, bold shade that adds warmth to any outfit.
+            </li>
+            <li>
+              Beige: A neutral base color that pairs well with other tones.
+            </li>
+            <li>Dark Brown: Deep and grounding, brown adds a classic touch.</li>
+          </ul>
+        </li>
+        <li>
+          Cool Colors:
+          <ul>
+            <li>
+              Olive Green: A subdued, cool tone perfect for both casual and
+              formal looks.
+            </li>
+            <li>
+              Watercress: A soft green that complements the earthy autumn
+              palette.
+            </li>
+            <li>
+              Quiet Shade: A neutral, cool gray that works well with bolder
+              accents.
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <img
+        src="../images/colors.png"
+        alt="Pantone 2024 Spring and Summer color palette showing both warm and cool colors that influence autumn fashion"
+        width="600"
+      />
+
+      <a href="#top" id="back-to-top">Back to Top</a>
+    </main>
+
+    <script>
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        if (link.href === window.location.href) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

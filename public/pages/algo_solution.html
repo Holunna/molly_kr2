@@ -1,0 +1,80 @@
+<!-- algo_solution.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Function Z = 1 / (XY)</title>
+    <!-- Link to the custom styles for the algorithmic task page -->
+    <link rel="stylesheet" href="../css/algo_task.css" />
+    <!-- Keep the main style.css for the general styles of your project -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            if (link.href === window.location.href) {
+              link.classList.add("active");
+            }
+          });
+        });
+    </script>
+
+    <div class="container">
+      <h1>Algorithmic Task: Calculate Z = 1 / (XY)</h1>
+      <p>
+        Determine the value of the function Z = 1 / (XY). If calculated
+        successfully, you can send the data to the server.
+      </p>
+
+      <form
+        action="https://www.bing.com/search?"
+        id="UserEnter"
+        name="UserEnter"
+        target="_blank"
+      >
+        <ul>
+          <li>
+            Search query:
+            <input name="q" value="search" />
+          </li>
+          <li>
+            Task description:
+            <input
+              name="formulation"
+              value="Determine the value of the function Z = 1 / (XY). If calculated successfully, send the data to the server."
+              readonly
+            />
+          </li>
+          <li>
+            X:
+            <input id="x" name="x" type="number" step="any" value="1" />
+          </li>
+          <li>
+            Y:
+            <input id="y" name="y" type="number" step="any" value="1" />
+          </li>
+          <li>
+            Result:
+            <input name="result" value="Not calculated" readonly />
+          </li>
+          <li>
+            <input id="verify" type="button" value="Calculate" />
+            <input id="send" type="button" value="Send" disabled />
+          </li>
+        </ul>
+      </form>
+
+      <p id="result">Calculation results:</p>
+    </div>
+
+    <script src="/js/algo_solution.js"></script>
+  </body>
+</html>
