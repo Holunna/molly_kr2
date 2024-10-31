@@ -14,7 +14,7 @@
      содержимое файла nav.html, представляющее навигационное меню, которое будет единым для всех страниц. -->
     <div id="nav-placeholder"></div>
 
-<!-- Код JS загружает навиг меню из внешнего файла nav.html и 
+    <!-- Код JS загружает навиг меню из внешнего файла nav.html и 
  вставляет его внутрь div#nav-placeholder. для удобства, чтобы изменения в навигации сразу применялись ко всем страницам.  -->
     <script>
       fetch("../nav.html")
@@ -68,14 +68,5 @@
         }
       </script>
     </main>
-
-    <!-- скрипт дублирует функцию добавления класса active к текущей странице, чтобы ссылка в меню навигации была выделена. -->
-    <script>
-      document.querySelectorAll(".nav-link").forEach((link) => {
-        if (link.href === window.location.href) {
-          link.classList.add("active");
-        }
-      });
-    </script>
   </body>
 </html>
