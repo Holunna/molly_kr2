@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <div id="nav-placeholder"></div>
+    <div id="rami"></div>
 
     <script>
       fetch("../nav.html")
         .then((response) => response.text())
         .then((data) => {
-          document.getElementById("nav-placeholder").innerHTML = data;
+          document.getElementById("rami").innerHTML = data;
 
           document.querySelectorAll(".nav-link").forEach((link) => {
             if (link.href === window.location.href) {

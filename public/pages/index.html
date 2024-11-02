@@ -10,17 +10,17 @@
   </head>
 
   <body>
-    <!-- Это пустой div с id="nav-placeholder", куда будет загружаться 
+    <!-- Это пустой div с id="rami", куда будет загружаться 
      содержимое файла nav.html, представляющее навигационное меню, которое будет единым для всех страниц. -->
-    <div id="nav-placeholder"></div>
+    <div id="rami"></div>
 
     <!-- Код JS загружает навиг меню из внешнего файла nav.html и 
- вставляет его внутрь div#nav-placeholder. для удобства, чтобы изменения в навигации сразу применялись ко всем страницам.  -->
+ вставляет его внутрь div#rami. для удобства, чтобы изменения в навигации сразу применялись ко всем страницам.  -->
     <script>
       fetch("../nav.html")
         .then((response) => response.text())
         .then((data) => {
-          document.getElementById("nav-placeholder").innerHTML = data;
+          document.getElementById("rami").innerHTML = data;
 
           document.querySelectorAll(".nav-link").forEach((link) => {
             if (link.href === window.location.href) {
