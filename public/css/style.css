@@ -1,16 +1,16 @@
 Global Styles body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #d0d0a3;
+    color: #333333;
 }
 
 nav ul {
     list-style: none;
-    background-color: #333;
+    background-color: #fff69b;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     overflow: hidden;
     text-align: center;
 }
@@ -21,22 +21,24 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 17px 20px;
     display: inline-block;
-    color: white;
+    color: #000000;
+    font-weight: 500;
+    line-height: 1.6;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    background-color: #d2691e;
-    /* Highlight active or hovered links */
-    color: white;
+    /* выделяет страницу на которую наводят */
+    background-color: #e265aae0;
+    color: #00c6ff;
     font-weight: bold;
-    border-radius: 5px;
+    border-bottom: 2px solid #333333;
 }
 
 main {
-    padding: 20px;
+    padding: 30px;
     max-width: 1200px;
     margin: auto;
     background-color: white;
@@ -46,14 +48,36 @@ main {
 
 h1,
 h2 {
-    color: #d2691e;
+    color: #ff5d62;
 }
 
+p, ul, ol{
+    color: #000000;
+    font-size: 1.2rem;
+}
+a{
+    color: #7b4b3a;
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+
+}
 img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
+a:hover {
+    text-decoration: underline;
+  }
+  
+  ul, ol {
+    margin: 1.5rem 0;
+    color: #2b1007;
 
 footer {
     background-color: #333;
