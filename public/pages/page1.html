@@ -1,7 +1,7 @@
 <!-- page1.html -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,13 +10,13 @@
   </head>
 
   <body>
-    <div id="rami"></div>
+    <div id="holly"></div>
 
     <script>
       fetch("../nav.html")
         .then((response) => response.text())
         .then((data) => {
-          document.getElementById("rami").innerHTML = data;
+          document.getElementById("holly").innerHTML = data;
 
           document.querySelectorAll(".nav-link").forEach((link) => {
             if (link.href === window.location.href) {
@@ -41,30 +41,30 @@
 
       <h2 id="trends">Top Trends</h2>
       <p>
-        This season, oversized coats, bold accessories, and layering are the
-        main trends in autumn fashion 2024. The focus is on combining comfort
-        with elegance, using natural tones and statement pieces to make an
-        impact.
+        В этом сезоне уж слишком популярны элегантные объемные пальто, смелые
+        аксессуары и стильные многослойные образы. Основной акцент на сочетании
+        комфорта и утонченности, с использованием природных оттенков и эффектных
+        деталей.
       </p>
 
       <ol>
         <li>
-          Layered outfits: Multiple layers add depth and warmth while
-          maintaining a chic, effortless look.
+          Яркая верхняя одежда: Яркие пальто и куртки с уникальными текстурами и
+          силуэтами сейчас на волне хайпа.
         </li>
         <li>
-          Statement outerwear: Bold coats and jackets dominate the runways,
-          featuring unique textures and silhouettes.
+          Смелые аксессуары: Большие сумки, объемные шарфы и массивная обувь
+          дополняют нейтральную палитру одежды.
         </li>
         <li>
-          Bold accessories: Large bags, oversized scarves, and standout footwear
-          complement the neutral clothing palette.
+          Многослойные образы: Глубокие и теплые слои создают атмосферу уюта,
+          оставаясь при этом стильными.
         </li>
       </ol>
 
       <img
         src="../images/trends.png"
-        alt="Models showcasing the latest autumn trends with layered outfits, statement outerwear, and bold accessories"
+        alt="Модели, демонстрирующие последние осенние тренды с многослойными образами, эффектными пальто и смелыми аксессуарами"
         width="600"
       />
 
@@ -72,23 +72,24 @@
 
       <h2 id="materials">Trending Materials</h2>
       <p>
-        Natural materials such as wool, leather, and cotton blends are essential
-        this autumn. Designers are prioritizing fabrics that offer both warmth
-        and durability while embracing intricate patterns.
+        Натуральные материалы, такие как шерсть, кожа и хлопковые смеси,
+        занимают центральное место этой осенью. Дизайнеры выбирают ткани,
+        которые обеспечивают тепло и прочность, при этом обладая изысканными
+        узорами.
       </p>
 
       <ul>
         <li>
-          Wool: Perfect for outerwear, wool provides warmth and can be styled in
-          many different ways.
+          Шерсть: Идеальна для верхней одежды, шерсть не только согревает, но и
+          позволяет создавать разнообразные образы.
         </li>
         <li>
-          Leather: Leather jackets and accessories bring a sophisticated edge to
-          the autumn wardrobe.
+          Кожа: Кожаные куртки и аксессуары добавляют изысканности и
+          брутальности осеннему гардеробу.
         </li>
         <li>
-          Cotton blends: Comfortable and versatile, cotton blends are a staple
-          for layering and casual looks.
+          Хлопок: Комфортные и универсальные, хлопковые ткани — обязательный
+          элемент для создания многослойности и повседневных образов.
         </li>
       </ul>
 
@@ -102,38 +103,42 @@
 
       <h2 id="colors">Autumn Colors</h2>
       <p>
-        The color palette for autumn 2024 is dominated by muted earthy tones
-        alongside vibrant accents. Designers are using these colors to highlight
-        different styles and layers in their collections.
+        Цветовая палитра осени 2024 насыщена приглушёнными природными оттенками
+        с яркими акцентами. Дизайнеры используют эти цвета, чтобы подчеркнуть
+        уникальные слои и стили своих коллекций.
       </p>
 
       <ul>
         <li>
-          Warm Colors:
+          Тёплые цвета:
           <ul>
             <li>
-              Burnt Orange: A rich, bold shade that adds warmth to any outfit.
+              Жженый оранжевый: Насытит образ теплом и привнесет смелый акцент.
             </li>
             <li>
-              Beige: A neutral base color that pairs well with other tones.
+              Бежевый: Нейтральный базовый цвет, который легко сочетается с
+              другими тонами.
             </li>
-            <li>Dark Brown: Deep and grounding, brown adds a classic touch.</li>
+            <li>
+              Темно-коричневый: Глубокий и элегантный, добавляет классический
+              настрой.
+            </li>
           </ul>
         </li>
         <li>
-          Cool Colors:
+          Холодные цвета:
           <ul>
             <li>
-              Olive Green: A subdued, cool tone perfect for both casual and
-              formal looks.
+              Оливковый: Приглушенный и стильный, подходит для повседневных и
+              формальных образов.
             </li>
             <li>
-              Watercress: A soft green that complements the earthy autumn
-              palette.
+              Светло серый: Нейтральный, прохладный серый, который прекрасно
+              сочетается с яркими акцентами.
             </li>
             <li>
-              Quiet Shade: A neutral, cool gray that works well with bolder
-              accents.
+              светло зеленый: Нежный зеленый оттенок, отлично гармонирующий с
+              осенней природной палитрой.
             </li>
           </ul>
         </li>
