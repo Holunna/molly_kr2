@@ -10,13 +10,13 @@
   </head>
 
   <body>
-    <div id="rami"></div>
+    <div id="holly"></div>
 
     <script>
       fetch("../nav.html")
         .then((response) => response.text())
         .then((data) => {
-          document.getElementById("rami").innerHTML = data;
+          document.getElementById("holly").innerHTML = data;
 
           document.querySelectorAll(".nav-link").forEach((link) => {
             if (link.href === window.location.href) {
@@ -27,18 +27,72 @@
     </script>
 
     <main>
-      <h1>Contact Us</h1>
+      <h1>Ваши контакты</h1>
       <form action="submit-data.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" /><br />
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="surname" required /><br />
+
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="group">Группа:</label>
+        <input type="text" id="group" name="group" /><br />
+
+        <label for="phone">Мобильный телефон:</label>
+        <input type="tel" id="phone" name="phone" required /><br />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" /><br />
+        <input type="email" id="email" name="email" required /><br />
 
-        <label for="message">Message:</label>
+        <label for="date">Дата отправки:</label>
+        <input type="date" id="date" name="date" /><br />
+
+        <label for="message">Сообщение:</label>
         <textarea id="message" name="message"></textarea><br />
 
-        <button type="submit">Submit</button>
+        <button type="submit">Отправить</button>
+      </form>
+
+      <h1>Оставьте отзыв или сделайте заказ</h1>
+      <form action="submit-order.php" method="POST">
+        <label for="product">Название продукта:</label>
+        <input type="text" id="product" name="product" required /><br />
+
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" name="quantity" required /><br />
+
+        <label>Тип продукта:</label>
+        <input
+          type="radio"
+          id="accessory"
+          name="product_type"
+          value="accessory"
+        />
+        <label for="accessory">Аксессуар</label>
+        <input
+          type="radio"
+          id="clothing"
+          name="product_type"
+          value="clothing"
+        />
+        <label for="clothing">Одежда</label><br />
+
+        <label for="extras">Дополнительно:</label>
+        <input type="checkbox" id="gift_wrap" name="extras" value="gift_wrap" />
+        <label for="gift_wrap">Подарочная упаковка</label><br />
+
+        <label for="date">Дата доставки:</label>
+        <input type="date" id="date" name="date" /><br />
+
+        <label for="password">Пароль для подтверждения:</label>
+        <input type="password" id="password" name="password" /><br />
+
+        <input type="hidden" name="order_id" value="12345" />
+
+        <label for="comments">Комментарии:</label>
+        <textarea id="comments" name="comments"></textarea><br />
+
+        <button type="submit">Отправить заказ</button>
       </form>
     </main>
   </body>
