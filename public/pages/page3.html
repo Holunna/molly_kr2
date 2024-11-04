@@ -1,12 +1,46 @@
-<!-- page3.html -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autumn Fashion 2024 - Outerwear</title>
+    <title>Осенняя Мода 2024 - Верхняя одежда</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* Стили для таблицы */
+      .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-image: url("../images/table-background.jpg");
+        background-size: cover;
+        text-align: center;
+      }
+    
+      .styled-table th,
+      .styled-table td {
+        padding: 15px;
+        border: 1px solid #ddd;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: 20px; /* Увеличенный размер текста */
+      }
+    
+      /* Увеличенный размер для изображений в таблице */
+      .styled-table img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+      }
+    
+      .styled-table a {
+        color: #ff5d62;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px; /* Увеличенный размер текста для ссылок */
+      }
+    
+      .styled-table a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
 
   <body>
@@ -27,14 +61,51 @@
     </script>
 
     <main>
-      <h1>Stylish Outerwear for Autumn 2024</h1>
-      <p>Don’t miss these outerwear styles this season:</p>
-      <ul>
-        <li>Oversized wool coats</li>
-        <li>Trench coats with a modern twist</li>
-        <li>Faux fur jackets</li>
-        <li>Leather biker jackets</li>
-      </ul>
+      <h1>Верхняя одежда</h1>
+      <p>Не пропустите эти стильные модели:</p>
+
+      <!-- Таблица -->
+      <table class="styled-table">
+        <tr>
+          <th>Название</th>
+          <th>Изображение</th>
+          <th>Подробнее</th>
+        </tr>
+        <tr>
+          <td>Пальто из шерсти</td>
+          <td><img src="../images/wool_coat.jpg" alt="Пальто из шерсти" /></td>
+          <td>
+            <a
+              href="https://www.dior.com/en_ae/fashion/products/510M48A1116_X6763"
+              target="_blank"
+              >Подробнее</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Шуба</td>
+          <td><img src="../images/faux_fur.jpg" alt="Шуба" /></td>
+          <td>
+            <a href=https://revolve.com/giuseppe-di-morabito-faux-fur-coat-in-brown/dp/GDMP-WO11/?d=F&currency=AED&countrycode=AE&lang=en&deeplink=true&deeplink=true&gclsrc=aw.ds&gad_source=1&gclid=Cj0KCQiA_qG5BhDTARIsAA0UHSKObVL9lGLCLrIgCQnhpY9xWeVB2Nnb3Bf2OfeVovNTeURGxBmM3Z4aAi44EALw_wcB" 
+            target="_blank"
+              >Подробнее</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Кожаная куртка</td>
+          <td>
+            <img src="../images/leather_jacket.jpg" alt="Кожаная куртка" />
+          </td>
+          <td>
+            <a
+              href="https://www.ysl.com/en-ae/pr/bomber-jacket-in-lambskin-813582175.html?gclsrc=aw.ds&gad_source=1&gclid=Cj0KCQiA_qG5BhDTARIsAA0UHSLOaBvkZBZZCmO5NJjYhMoaO6BRGc5cM8YZFmzTeoL-Ywe4on3CH0UaAleaEALw_wcB"
+              target="_blank"
+              >Подробнее</a
+            >
+          </td>
+        </tr>
+      </table>
     </main>
   </body>
 </html>

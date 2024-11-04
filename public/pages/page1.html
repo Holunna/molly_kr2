@@ -7,6 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autumn Fashion 2024 - Trends</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* Стили для галереи изображений в ряд */
+      .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .image-gallery img {
+        width: 150px; /* Фиксированная ширина для миниатюр */
+        height: auto;
+        border-radius: 5px;
+      }
+    </style>
   </head>
 
   <body>
@@ -29,15 +43,11 @@
     <main>
       <h1>Autumn Fashion 2024 Trends</h1>
 
-      <!-- Internal Navigation Links -->
-
       <p>
         <a href="#trends">Trends</a> | <a href="#materials">Materials</a> |
         <a href="#colors">Colors</a> |
         <a href="#back-to-top">Back to Top</a>
       </p>
-
-      <!-- Section 1: Top Trends -->
 
       <h2 id="trends">Top Trends</h2>
       <p>
@@ -46,7 +56,7 @@
         комфорта и утонченности, с использованием природных оттенков и эффектных
         деталей.
       </p>
-
+      <!-- нумерованные списки -->
       <ol>
         <li>
           Яркая верхняя одежда: Яркие пальто и куртки с уникальными текстурами и
@@ -61,14 +71,13 @@
           оставаясь при этом стильными.
         </li>
       </ol>
-
-      <img
-        src="../images/trends.png"
-        alt="Модели, демонстрирующие последние осенние тренды с многослойными образами, эффектными пальто и смелыми аксессуарами"
-        width="600"
-      />
-
-      <!-- Section 2: Trending Materials -->
+      <div class="image-gallery">
+        <img src="../images/clothes.jpg" alt=" Яркая верхняя одежда" />
+        <img src="../images/bagibagi.jpg" alt="Смелые аксессуары" />
+        <img src="../images/all.jpg" alt="Многослойные образы" />
+        <img src="../images/all1.jpg" alt="Многослойные образы" />
+        <img src="../images/all2.jpg" alt="Многослойные образы" />
+      </div>
 
       <h2 id="materials">Trending Materials</h2>
       <p>
@@ -77,7 +86,7 @@
         которые обеспечивают тепло и прочность, при этом обладая изысканными
         узорами.
       </p>
-
+      <!-- ненумерованные списки -->
       <ul>
         <li>
           Шерсть: Идеальна для верхней одежды, шерсть не только согревает, но и
@@ -93,13 +102,13 @@
         </li>
       </ul>
 
-      <img
-        src="../images/materials.png"
-        alt="A collage of different wool and leather textures for autumn 2024 trends"
-        width="600"
-      />
-
-      <!-- Section 3: Colors -->
+      <div class="image-gallery">
+        <img src="../images/шерсть.jpg" alt="Шерсть" />
+        <img src="../images/кожа.jpg" alt="Кожа" />
+        <img src="../images/хлопок.jpg" alt="Хлопок" />
+        <img src="../images/хлопок1.jpg" alt="Хлопок" />
+        <img src="../images/шерсть1.jpg" alt="Шерсть" />
+      </div>
 
       <h2 id="colors">Autumn Colors</h2>
       <p>
@@ -107,7 +116,7 @@
         с яркими акцентами. Дизайнеры используют эти цвета, чтобы подчеркнуть
         уникальные слои и стили своих коллекций.
       </p>
-
+      <!-- вложенные списки -->
       <ul>
         <li>
           Тёплые цвета:
@@ -137,19 +146,20 @@
               сочетается с яркими акцентами.
             </li>
             <li>
-              светло зеленый: Нежный зеленый оттенок, отлично гармонирующий с
+              Светло зеленый: Нежный зеленый оттенок, отлично гармонирующий с
               осенней природной палитрой.
             </li>
           </ul>
         </li>
       </ul>
-
-      <img
-        src="../images/colors.png"
-        alt="Pantone 2024 Spring and Summer color palette showing both warm and cool colors that influence autumn fashion"
-        width="600"
-      />
-
+      <div class="image-gallery">
+        <img src="../images/colors1.jpg" alt="Colors1" />
+        <img src="../images/colors2.jpg" alt="Colors2" />
+        <img src="../images/colors3.jpg" alt="Colors3" />
+        <img src="../images/colors4.jpg" alt="Colors4" />
+        <img src="../images/colors5.jpg" alt="Colors5" />
+      </div>
+      <br />
       <a href="#top" id="back-to-top">Back to Top</a>
     </main>
   </body>
