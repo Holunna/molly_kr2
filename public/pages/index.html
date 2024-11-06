@@ -16,14 +16,20 @@
 
     <!-- Код JS загружает навиг меню из внешнего файла nav.html и 
  вставляет его внутрь div#holly. для удобства, чтобы изменения в навигации сразу применялись ко всем страницам.  -->
+
     <script>
+      // загружает файл nav.html с навигацией через асинхронный запрос.
       fetch("../nav.html")
+        // обрабатывает ответ от fetch, преобразуя его в текст.
         .then((response) => response.text())
+        // принимает текст данных nav.html и выполняет код внутри { ... }.
         .then((data) => {
           document.getElementById("holly").innerHTML = data;
 
+          //  ищет все элементы с классом nav-link и выполняет код для каждого элемента.
           document.querySelectorAll(".nav-link").forEach((link) => {
             if (link.href === window.location.href) {
+              // проверяет, совпадает ли href ссылки с текущим URL.
               link.classList.add("active");
             }
           });

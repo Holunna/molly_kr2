@@ -1,11 +1,12 @@
 let result; // Определяем переменную глобально
 let check = false; // Переменная для проверки состояния расчета
-
+// бъявляет функцию verify, которая выполняет проверку и расчет значений X и Y.
 function verify() {
+    // извлекает значение из элемента elementX, преобразует его в число с плавающей точкой (parseFloat) и сохраняет в переменную x.
     let x = parseFloat(elementX.value);
     let y = parseFloat(elementY.value);
     let messageText = "Calculation results: ";
-
+    // проверяет, является ли x или y равным нулю. Если одно из значений равно нулю, результат будет ошибочным, так как деление на ноль невозможно.
     if (x === 0 || y === 0) {
         result = "Error: X and Y must be non-zero.";
         document.getElementById("result").innerText = messageText + result;
@@ -21,7 +22,7 @@ function verify() {
         document.getElementById("send").disabled = false; // Активируем кнопку
     }
 }
-
+// функция, которая отправляет данные формы, если проверка (check) пройдена.
 function send() {
     if (check) {
         // Передаем описание задачи
@@ -35,7 +36,7 @@ function send() {
     }
 }
 
-// Связываем элементы и события
+// связывает переменную elementX с элементом ввода с id x.
 const elementX = document.getElementById("x");
 elementX.addEventListener('input', verify);
 
