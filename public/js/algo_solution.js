@@ -1,44 +1,41 @@
+let result; // Определяем переменную глобально
+let check = false; // Переменная для проверки состояния расчета
+
 function verify() {
-    console.log("X, Y")
     let x = parseFloat(elementX.value);
     let y = parseFloat(elementY.value);
-    console.log(x, y);
-
-    let result;
+    let messageText = "Calculation results: ";
 
     if (x === 0 || y === 0) {
         result = "Error: X and Y must be non-zero.";
         document.getElementById("result").innerText = messageText + result;
         document.getElementsByName('result')[0].value = result;
         check = false;
+        document.getElementById("send").disabled = true; // Деактивируем кнопку
     } else {
         let z = 1 / (x * y);
         result = `Z = 1 / (${x} * ${y}) = ${z}`;
         document.getElementById("result").innerText = messageText + result;
         document.getElementsByName('result')[0].value = result;
         check = true;
+        document.getElementById("send").disabled = false; // Активируем кнопку
     }
 }
 
 function send() {
     if (check) {
+        // Передаем описание задачи
         let textCondition = document.getElementsByTagName('p')[0].innerText;
         document.getElementsByName('formulation')[0].value = textCondition;
+        // Устанавливаем значение результата в форму
         document.getElementsByName('result')[0].value = result;
-        document.getElementById("UserEnter").submit();
+        document.getElementById("UserEnter").submit(); // Отправляем форму
     } else {
         alert("There are issues. Please correct the input.");
     }
 }
 
-function verify_send() {
-    verify();
-    send();
-}
-
-let messageText = document.getElementById("result").innerText;
-let check = false;
-
+// Связываем элементы и события
 const elementX = document.getElementById("x");
 elementX.addEventListener('input', verify);
 
