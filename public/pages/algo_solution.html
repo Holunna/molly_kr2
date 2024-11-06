@@ -5,19 +5,17 @@
   <head>
     <meta charset="UTF-8" />
     <title>Function Z = 1 / (XY)</title>
-    <!-- Link to the custom styles for the algorithmic task page -->
     <link rel="stylesheet" href="../css/algo_task.css" />
-    <!-- Keep the main style.css for the general styles of your project -->
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <div id="rami"></div>
+    <div id="holly"></div>
 
     <script>
       fetch("../nav.html")
         .then((response) => response.text())
         .then((data) => {
-          document.getElementById("rami").innerHTML = data;
+          document.getElementById("holly").innerHTML = data;
 
           document.querySelectorAll(".nav-link").forEach((link) => {
             if (link.href === window.location.href) {

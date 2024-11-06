@@ -5,57 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Контакты - Осенняя Мода 2024</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <style>
-      /* Дополнительные стили для улучшения внешнего вида формы */
-      form {
-        background-color: #ffffff;
-        padding: 20px;
-        margin-top: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        max-width: 600px;
-        margin: auto;
-      }
-
-      form label {
-        display: block;
-        margin-top: 10px;
-        font-weight: bold;
-      }
-
-      form input,
-      form textarea,
-      form select {
-        width: 100%;
-        padding: 10px;
-        margin-top: 5px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-      }
-
-      form button {
-        background-color: #ff5d62;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: 18px;
-        cursor: pointer;
-        margin-top: 15px;
-      }
-
-      form button:hover {
-        background-color: #e04d52;
-      }
-
-      h1 {
-        text-align: center;
-        color: #333333;
-        font-size: 26px;
-        margin-bottom: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="../css/contact.css" />
   </head>
 
   <body>
@@ -77,93 +27,62 @@
 
     <main>
       <h1>Ваши контакты</h1>
-      <form
-        action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse"
-        method="POST"
-      >
+      <form action="https://formspree.io/f/xjkvwgyy" method="POST">
         <label for="surname">Фамилия:</label>
-        <input
-          type="text"
-          id="surname"
-          name="entry.1111111111"
-          required
-        /><br />
+        <input type="text" id="surname" name="surname" required /><br />
 
         <label for="name">Имя:</label>
-        <input type="text" id="name" name="entry.2222222222" required /><br />
+        <input type="text" id="name" name="name" required /><br />
 
         <label for="group">Группа:</label>
-        <input type="text" id="group" name="entry.3333333333" /><br />
+        <input type="text" id="group" name="group" /><br />
 
         <label for="phone">Мобильный телефон:</label>
-        <input type="tel" id="phone" name="entry.4444444444" required /><br />
+        <input type="tel" id="phone" name="phone" required /><br />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="entry.5555555555" required /><br />
+        <input type="email" id="email" name="email" required /><br />
 
         <label for="date">Дата отправки:</label>
-        <input type="date" id="date" name="entry.6666666666" /><br />
+        <input type="date" id="date" name="date" /><br />
 
         <label for="message">Сообщение:</label>
-        <textarea id="message" name="entry.7777777777"></textarea><br />
+        <textarea id="message" name="message"></textarea><br />
 
         <button type="submit">Отправить</button>
       </form>
 
       <h1>Оставьте отзыв или сделайте заказ</h1>
-      <form
-        action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse"
-        method="POST"
-      >
+      <form action="https://formspree.io/f/mdkogaeg" method="POST">
         <label for="product">Название продукта:</label>
-        <input
-          type="text"
-          id="product"
-          name="entry.8888888888"
-          required
-        /><br />
+        <input type="text" id="product" name="product" required /><br />
 
         <label for="quantity">Количество:</label>
-        <input
-          type="number"
-          id="quantity"
-          name="entry.9999999999"
-          required
-        /><br />
+        <input type="number" id="quantity" name="quantity" required /><br />
 
         <label>Тип продукта:</label>
         <input
           type="radio"
           id="accessory"
-          name="entry.1010101010"
+          name="product_type"
           value="Аксессуар"
         />
         <label for="accessory">Аксессуар</label>
-        <input
-          type="radio"
-          id="clothing"
-          name="entry.1010101010"
-          value="Одежда"
-        />
+        <input type="radio" id="clothing" name="product_type" value="Одежда" />
         <label for="clothing">Одежда</label><br />
 
         <label for="extras">Дополнительно:</label>
-        <input
-          type="checkbox"
-          id="gift_wrap"
-          name="entry.1111111112"
-          value="gift_wrap"
-        />
+        <input type="checkbox" id="gift_wrap" name="extras" value="gift_wrap" />
         <label for="gift_wrap">Подарочная упаковка</label><br />
 
         <label for="delivery_date">Дата доставки:</label>
-        <input type="date" id="delivery_date" name="entry.1212121212" /><br />
+        <input type="date" id="delivery_date" name="delivery_date" /><br />
 
         <label for="password">Пароль для подтверждения:</label>
-        <input type="password" id="password" name="entry.1313131313" /><br />
+        <input type="password" id="password" name="password" /><br />
 
         <label for="comments">Комментарии:</label>
-        <textarea id="comments" name="entry.1414141414"></textarea><br />
+        <textarea id="comments" name="comments"></textarea><br />
 
         <button type="submit">Отправить заказ</button>
       </form>
