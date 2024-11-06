@@ -15,7 +15,7 @@ app.get('/algo_solution', (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 3030;
+const PORT = process.env.PORT || 6969;
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
