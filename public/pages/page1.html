@@ -34,6 +34,7 @@
           // принимает текст данных nav.html и выполняет код внутри { ... }.
           .then((data) => {
             document.getElementById("holly").innerHTML = data;
+            console.log(data)
   
             //  ищет все элементы с классом nav-link и выполняет код для каждого элемента.
             document.querySelectorAll(".nav-link").forEach((link) => {

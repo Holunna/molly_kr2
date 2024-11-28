@@ -28,6 +28,15 @@ nav ul li a {
     line-height: 1.6;
 }
 
+/* nav ul li a:hover {
+    background-color: #ff6347;
+    color: #ffffff; 
+    font-weight: bold;
+    border-bottom: none;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 0;} */
+
 nav ul li a:hover,
 nav ul li a.active {
     /* выделяет страницу на которую наводят */
