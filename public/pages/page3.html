@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Осенняя Мода 2024 - Верхняя одежда</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" />
     <style>
       /* Стили для таблицы */
@@ -14,7 +15,7 @@
         background-size: cover;
         text-align: center;
       }
-    
+
       .styled-table th,
       .styled-table td {
         padding: 15px;
@@ -22,48 +23,48 @@
         background-color: rgba(255, 255, 255, 0.8);
         font-size: 20px; /* Увеличенный размер текста */
       }
-    
+
       /* Увеличенный размер для изображений в таблице */
       .styled-table img {
         width: 200px;
         height: auto;
         border-radius: 10px;
       }
-    
+
       .styled-table a {
         color: #ff5d62;
         font-weight: bold;
         text-decoration: none;
         font-size: 18px; /* Увеличенный размер текста для ссылок */
       }
-    
+
       .styled-table a:hover {
         text-decoration: underline;
       }
     </style>
   </head>
+  <body>
+    <!-- контейнер для загрузки навигации с использованием fetch. -->
+    <div id="holly"></div>
 
-      <!-- контейнер для загрузки навигации с использованием fetch. -->
-      <div id="holly"></div>
+    <script>
+      // загружает файл nav.html с навигацией через асинхронный запрос.
+      fetch("../nav.html")
+        // обрабатывает ответ от fetch, преобразуя его в текст.
+        .then((response) => response.text())
+        // принимает текст данных nav.html и выполняет код внутри { ... }.
+        .then((data) => {
+          document.getElementById("holly").innerHTML = data;
 
-      <script>
-        // загружает файл nav.html с навигацией через асинхронный запрос.
-        fetch("../nav.html")
-          // обрабатывает ответ от fetch, преобразуя его в текст.
-          .then((response) => response.text())
-          // принимает текст данных nav.html и выполняет код внутри { ... }.
-          .then((data) => {
-            document.getElementById("holly").innerHTML = data;
-  
-            //  ищет все элементы с классом nav-link и выполняет код для каждого элемента.
-            document.querySelectorAll(".nav-link").forEach((link) => {
-              if (link.href === window.location.href) {
-                // проверяет, совпадает ли href ссылки с текущим URL.
-                link.classList.add("active");
-              }
-            });
+          //  ищет все элементы с классом nav-link и выполняет код для каждого элемента.
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            if (link.href === window.location.href) {
+              // проверяет, совпадает ли href ссылки с текущим URL.
+              link.classList.add("active");
+            }
           });
-      </script>
+        });
+    </script>
 
     <main>
       <h1>Верхняя одежда</h1>
@@ -91,8 +92,9 @@
           <td>Шуба</td>
           <td><img src="../images/faux_fur.jpg" alt="Шуба" /></td>
           <td>
-            <a href=https://revolve.com/giuseppe-di-morabito-faux-fur-coat-in-brown/dp/GDMP-WO11/?d=F&currency=AED&countrycode=AE&lang=en&deeplink=true&deeplink=true&gclsrc=aw.ds&gad_source=1&gclid=Cj0KCQiA_qG5BhDTARIsAA0UHSKObVL9lGLCLrIgCQnhpY9xWeVB2Nnb3Bf2OfeVovNTeURGxBmM3Z4aAi44EALw_wcB" 
-            target="_blank"
+            <a
+              href="https://revolve.com/giuseppe-di-morabito-faux-fur-coat-in-brown/dp/GDMP-WO11/?d=F&currency=AED&countrycode=AE&lang=en&deeplink=true&deeplink=true&gclsrc=aw.ds&gad_source=1&gclid=Cj0KCQiA_qG5BhDTARIsAA0UHSKObVL9lGLCLrIgCQnhpY9xWeVB2Nnb3Bf2OfeVovNTeURGxBmM3Z4aAi44EALw_wcB"
+              target="_blank"
               >Подробнее</a
             >
           </td>

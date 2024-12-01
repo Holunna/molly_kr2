@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Осенняя Мода 2024 - Аксессуары</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" />
     <style>
       /* Стили для галереи изображений в ряд */
@@ -20,28 +21,28 @@
       }
     </style>
   </head>
+  <body>
+    <!-- контейнер для загрузки навигации с использованием fetch. -->
+    <div id="holly"></div>
 
-      <!-- контейнер для загрузки навигации с использованием fetch. -->
-      <div id="holly"></div>
+    <script>
+      // загружает файл nav.html с навигацией через асинхронный запрос.
+      fetch("../nav.html")
+        // обрабатывает ответ от fetch, преобразуя его в текст.
+        .then((response) => response.text())
+        // принимает текст данных nav.html и выполняет код внутри { ... }.
+        .then((data) => {
+          document.getElementById("holly").innerHTML = data;
 
-      <script>
-        // загружает файл nav.html с навигацией через асинхронный запрос.
-        fetch("../nav.html")
-          // обрабатывает ответ от fetch, преобразуя его в текст.
-          .then((response) => response.text())
-          // принимает текст данных nav.html и выполняет код внутри { ... }.
-          .then((data) => {
-            document.getElementById("holly").innerHTML = data;
-  
-            //  ищет все элементы с классом nav-link и выполняет код для каждого элемента.
-            document.querySelectorAll(".nav-link").forEach((link) => {
-              if (link.href === window.location.href) {
-                // проверяет, совпадает ли href ссылки с текущим URL.
-                link.classList.add("active");
-              }
-            });
+          //  ищет все элементы с классом nav-link и выполняет код для каждого элемента.
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            if (link.href === window.location.href) {
+              // проверяет, совпадает ли href ссылки с текущим URL.
+              link.classList.add("active");
+            }
           });
-      </script>
+        });
+    </script>
 
     <main>
       <p>
