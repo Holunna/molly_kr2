@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Осенняя Мода 2024 - Аксессуары</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* Стили для галереи изображений в ряд */
+      .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .image-gallery img {
+        width: 150px; /* Фиксированная ширина для миниатюр */
+        height: auto;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+      <!-- контейнер для загрузки навигации с использованием fetch. -->
+      <div id="holly"></div>
+
+      <script>
+        // загружает файл nav.html с навигацией через асинхронный запрос.
+        fetch("../nav.html")
+          // обрабатывает ответ от fetch, преобразуя его в текст.
+          .then((response) => response.text())
+          // принимает текст данных nav.html и выполняет код внутри { ... }.
+          .then((data) => {
+            document.getElementById("holly").innerHTML = data;
+  
+            //  ищет все элементы с классом nav-link и выполняет код для каждого элемента.
+            document.querySelectorAll(".nav-link").forEach((link) => {
+              if (link.href === window.location.href) {
+                // проверяет, совпадает ли href ссылки с текущим URL.
+                link.classList.add("active");
+              }
+            });
+          });
+      </script>
+
+    <main>
+      <p>
+        <a href="#Streetwear">Streetwear</a> | <a href="#Y2K">Y2K</a> |
+        <a href="#E-Girl">E-Girl</a> |
+        <a href="#back-to-top">Back to Top</a>
+      </p>
+
+      <h1>Style</h1>
+      <p>
+        Мода — это не просто одежда, а способ самовыражения, отражение культурных изменений и социальных тенденций. 
+        <br>
+        <br>
+        Молодежные стили, развиваясь и эволюционируя, становятся яркими индикаторами текущих настроений, предпочтений и новых веяний в мире моды. 
+        Сегодня молодежь по всему миру выбирает стиль, который позволяет не только следовать трендам, но и выразить свою индивидуальность, зачастую ломая привычные каноны и смешивая элементы разных эпох и субкультур. 
+        От уличной моды до минимализма — каждый стиль представляет собой уникальное сочетание творчества, истории и современных технологий. 
+        <br>
+        <br>
+        В этой статье мы познакомим вас с самыми популярными молодежными стилями, которые захватили внимание и сердца молодых людей по всему миру.
+      </p>
+      <h1 id="Streetwear">Streetwear</h1>
+      <a href="https://www.vintage-folk.com/blogs/blog/the-history-and-evolution-of-streetwear?srsltid=AfmBOoqIgoaGp56WVvyuzoGr4gkBkg9IDzTZnUfHgJpMZ2s94cEJMupb" target="_self">История Streetwear</a>
+      <p>
+        Streetwear — это стиль, который вырос из уличной культуры и привнес в моду элементы хип-хопа, граффити и спортивного шика. 
+        <br>Это не просто одежда, а способ самовыражения, воплощение духа свободы и протеста, что делает его особенно популярным среди молодежи. 
+        <br>Уличный стиль акцентирует внимание на удобстве, смелых логотипах и ярких аксессуарах.
+      </p>
+      <ul>
+        <li>
+            Вдохновлен уличной культурой и хип-хопом.
+        </li>
+        <li>
+            Элементы: толстовки, сникеры, широкие джинсы, футболки с логотипами, бейсболки.
+        </li>
+        <li>
+           Популярные бренды: Supreme, Off-White, A Bathing Ape.
+        </li>
+      </ul>
+      <div class="image-gallery">
+        <a href="https://www.google.com/search?sca_esv=872fab285cdd172a&sxsrf=ADLYWILDSd7b2FeG6I2FjpGh3L7_ACT7bw:1733007261465&q=Streetwear&udm=2&fbs=AEQNm0Cjmfui-wh8X_MyYW04R9TpamBHVX6Kw9jNpJc7ZzHZr5OwW2ygFLZFdGlQlnVe4r4Qv8zA6IupyAUWcRioRv4f9njvOHQSJodVsTGnuwiwEr7yELNIrkWDXyHA4SFvppb2gLs1M0Qy0XL5E9cyX--9vVWBaLptMNINKmQX14VYrHsEqNwVRw1FY1ObljGDj5RGbopSn7ETrYweCMxE8FYg0afCpVKGJ4vj-PiBiZgifunrt5I&sa=X&ved=2ahUKEwjsztmRk4WKAxXOSaQEHd7zDn4QtKgLegQIGBAB&biw=1440&bih=778&dpr=2" target="_self">
+            <img src="../images/Str1.jpg" alt="Яркая верхняя одежда" />
+        </a>
+            <img src="../images/Str2.jpg" alt="Смелые аксессуары" />
+            <img src="../images/Str3.jpg" alt="Многослойные образы" />
+    </div>
+    
+    
+      <h2 id="Y2K">Y2K (2000s Revival)</h2>
+      <p>Стиль Y2K — это возрождение моды начала 2000-х, которое возвращает элементы тех лет, такие как блестки, мини-юбки, узкие джинсы и смелые аксессуары. 
+        Вдохновленный культурой поп-музыки и интернет-революцией, этот стиль позволяет молодежи снова пережить яркие моменты эпохи.
+      </p>
+        <a href="https://www.newwavemagazine.com/single-post/the-history-of-y2k-2021-s-hottest-trend" target="_self">История Y2K (2000s Revival)</a>
+        <ul>
+            <li>
+                Сильно выщипанные, тонкие брови, которые были характерны для конца 90-х и начала 2000-х, снова становятся популярными.
+            </li>
+            <li>
+                Мода начала 2000-х возвращается с элементами глэм-рока, яркими цветами, блестками, узкими джинсами и микросумками.
+            </li>
+            <li>
+                Популярны бренды: Juicy Couture, Von Dutch, Diesel.
+            </li>
+          </ul>
+          <div class="image-gallery">
+            <a href="https://www.google.com/search?sca_esv=872fab285cdd172a&sxsrf=ADLYWIJO2LYzqTNQbuhOOV6mjdQgDRRQMQ:1733007407975&q=Y2K+(2000s+Revival)&udm=2&fbs=AEQNm0Cjmfui-wh8X_MyYW04R9TplgSUunxdGPZ4KQOcMqiQXzwi7ATI-6dnMJBLUXNKfC1Fz35Ev7TWmGOXHyCb0EH_FRwpjAbkF42M3W6CyrzfieZzkVbWVg_oUmsxBsqZ4hLiRyWelhhicYunKgtSGWmyvIuhrzMJhJhHkz1tG6_jv0pWEQUsb2U76wXj6BMUdz5V2eRx5Wz4ug6WERfs_TK8lmvTxlVNOeMKKdKKDeB5OvYg5JQ&sa=X&ved=2ahUKEwjo8sfXk4WKAxV9UaQEHXf1HpgQtKgLegQIEhAB&biw=1440&bih=778&dpr=2"
+          target="_self">
+            <img src="../images/Y2K1.jpg" alt=" Яркая верхняя одежда" />
+          </a>
+            <img src="../images/Y2K2.jpg" alt="Смелые аксессуары" />
+            <img src="../images/Y2K3.jpg" alt="Многослойные образы" />
+          </div>
+      <h2 id="E-Girl">E-Girl/E-Boy</h2>
+      <p>E-Girl и E-Boy — это стиль, который появился в интернете и отражает культовые элементы готики, панка и киберпанка. 
+        Яркие волосы, смелый макияж и неоновые акценты в одежде создают образы, которые легко узнаваемы в цифровом мире и идеально подходят для самовыражения через социальные сети.
+     </p>
+     <a href="https://www.vox.com/the-goods/2019/8/1/20748707/egirl-definition-what-is-an-eboy" target="_self">История E-Girl/E-Boy</a>
+      <ul>
+        <li>
+            Вдохновлен субкультурами интернета, киберпанком и панком.
+        </li>
+        <li>
+            Элементы: темные наряды, цепи, яркие волосы, макияж в стиле «граффити», неоновое освещение.
+        </li>
+        <li>
+            Вдохновляют такие платформы, как TikTok и Instagram.
+        </li>
+      </ul>
+      <div class="image-gallery">
+        <a href="https://www.google.com/search?q=e+girl+e+boy+aesthetic&sca_esv=872fab285cdd172a&udm=2&biw=1440&bih=778&sxsrf=ADLYWILiUn5X8b7A4aFh2gYOHRuyj1_OEg%3A1733008132721&ei=BJtLZ6XWK8b5kdUP_vHukAo&oq=E-Girl%2FE-Boy+aest&gs_lp=EgNpbWciEUUtR2lybC9FLUJveSBhZXN0KgIIADIEEAAYHkiSH1D4BFiNFnABeACQAQCYAWigAfYDqgEDMi4zuAEByAEA-AEBmAIGoAKDBMICBxAAGIAEGBPCAggQABgTGAoYHsICBhAAGBMYHsICChAAGBMYCBgKGB7CAggQABgTGAgYHsICBhAAGAoYHpgDAIgGAZIHAzIuNKAHuQU&sclient=img" 
+        target="_self">
+        <img src="../images/Egirl1.jpg" alt=" Яркая верхняя одежда" />
+    </a>
+        <img src="../images/Egirl2.jpg" alt="Смелые аксессуары" />
+        <img src="../images/Egirl3.jpg" alt="Многослойные образы" />
+      </div>
+      <br>
+      <a href="#top" id="back-to-top">Back to Top</a>
+    </main>
+  </body>
+</html>

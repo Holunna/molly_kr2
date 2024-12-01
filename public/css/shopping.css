@@ -1,0 +1,172 @@
+/* Общий стиль для body */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333333;
+}
+
+/* Стили для навигации */
+nav ul {
+  list-style: none;
+  background-color: #fff69b;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 17px 20px;
+  display: inline-block;
+  color: #000000;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Ховер эффект и активная ссылка */
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #e265aae0;
+  color: #00c6ff;
+  font-weight: bold;
+  border-bottom: 2px solid #333333;
+}
+
+/* Основной контейнер */
+main {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Заголовки */
+h1,
+h2 {
+  color: #ff5d62;
+  text-align: center;
+}
+
+/* Текстовые элементы */
+p,
+ul,
+ol {
+  color: #000000;
+  font-size: 1.2rem;
+}
+
+a {
+  color: #7b4b3a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Списки */
+ul,
+ol {
+  margin: 1.5rem 0;
+  color: #2b1007;
+}
+
+/* Изображения */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Футер */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Галерея изображений */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.image-gallery img {
+  width: 150px; /* Фиксированная ширина */
+  height: auto;
+  border-radius: 5px;
+}
+/* Обертка для поиска и сортировки */
+.search-sort-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Расстояние между полем поиска и сортировкой */
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 10px;
+  background-color: #fff69b;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Поле поиска */
+.search-sort-wrapper input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ff5d62;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-sort-wrapper input[type="text"]:focus {
+  border-color: #e265aa;
+}
+
+/* Выпадающий список сортировки */
+.search-sort-wrapper select {
+  padding: 10px;
+  border: 2px solid #ff5d62;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+.search-sort-wrapper select:focus {
+  border-color: #e265aa;
+}
+
+/* Стиль контейнера */
+.search-sort-wrapper {
+  font-family: "Arial", sans-serif;
+}
+
+/* Специфичные стили для страницы page1 */
+#page1 .image-gallery img {
+  width: auto; /* Автоматическая ширина */
+  height: auto;
+}
