@@ -12,10 +12,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/pages/index.html'));
 });
 
-app.get('/algo_solution', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/pages/algo_solution.html'));
-});
-
 // задает порт для сервера.
 const PORT = process.env.PORT || 6969;
 app.listen(PORT, () => {
