@@ -6,20 +6,6 @@
     <title>Осенняя Мода 2024 - Аксессуары</title>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" />
-    <style>
-      /* Стили для галереи изображений в ряд */
-      .image-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 10px;
-      }
-      .image-gallery img {
-        width: 150px; /* Фиксированная ширина для миниатюр */
-        height: auto;
-        border-radius: 5px;
-      }
-    </style>
   </head>
   <body>
     <!-- контейнер для загрузки навигации с использованием fetch. -->
@@ -166,7 +152,6 @@
       </h3>
 
       <script>
-        // объявляет функцию, определяющую цветотип на основе выбранных параметров.
         function determineColorType() {
           const skinColor = document.querySelector(
             'input[name="skinColor"]:checked'

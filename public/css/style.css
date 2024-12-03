@@ -28,15 +28,6 @@ nav ul li a {
   line-height: 1.6;
 }
 
-/* nav ul li a:hover {
-    background-color: #ff6347;
-    color: #ffffff; 
-    font-weight: bold;
-    border-bottom: none;
-    padding: 5px 10px;
-    display: inline-block;
-    border-radius: 0;} */
-
 nav ul li a:hover,
 nav ul li a.active {
   /* выделяет страницу на которую наводят */
@@ -101,8 +92,6 @@ footer {
   width: 100%;
   z-index: 10;
 }
-
-/* Стили для галереи изображений по умолчанию */
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -110,7 +99,7 @@ footer {
   margin-top: 10px;
 }
 .image-gallery img {
-  width: 150px; /* Фиксированная ширина для всех страниц, кроме page1 */
+  width: 150px;
   height: auto;
   border-radius: 5px;
 }
