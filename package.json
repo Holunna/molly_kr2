@@ -1,6 +1,18 @@
 {
+  "name": "holunna-fashion",
+  "version": "1.0.0",
+  "description": "Fashion website by @holunna",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "express": "^4.21.1",
     "helmet": "^8.0.0"
-  }
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "author": "Polina Didik",
+  "license": "MIT"
 }
