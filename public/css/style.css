@@ -1,31 +1,31 @@
 Global Styles body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333333;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333333;
 }
 
 nav ul {
-    list-style: none;
-    background-color: #fff69b;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    text-align: center;
+  list-style: none;
+  background-color: #fff69b;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline;
+  display: inline;
 }
 
 nav ul li a {
-    text-decoration: none;
-    padding: 17px 20px;
-    display: inline-block;
-    color: #000000;
-    font-weight: 500;
-    line-height: 1.6;
+  text-decoration: none;
+  padding: 17px 20px;
+  display: inline-block;
+  color: #000000;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 /* nav ul li a:hover {
@@ -39,80 +39,84 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    /* выделяет страницу на которую наводят */
-    background-color: #e265aae0;
-    color: #00c6ff;
-    font-weight: bold;
-    border-bottom: 2px solid #333333;
+  /* выделяет страницу на которую наводят */
+  background-color: #e265aae0;
+  color: #00c6ff;
+  font-weight: bold;
+  border-bottom: 2px solid #333333;
 }
 
 main {
-    padding: 30px;
-    max-width: 1200px;
-    margin: auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 h1,
 h2 {
-    color: #ff5d62;
+  color: #ff5d62;
 }
 
-p, ul, ol{
-    color: #000000;
-    font-size: 1.2rem;
+p,
+ul,
+ol {
+  color: #000000;
+  font-size: 1.2rem;
 }
-a{
-    color: #7b4b3a;
-    text-decoration: none; 
-    font-weight: bold;
-    font-size: 1.25rem;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    text-align: center;
-
+a {
+  color: #7b4b3a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
 }
 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 a:hover {
-    text-decoration: underline;
-  }
-  
-  ul, ol {
-    margin: 1.5rem 0;
-    color: #2b1007;
+  text-decoration: underline;
+}
 
-    footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        z-index: 10;
- 
+ul,
+ol {
+  margin: 1.5rem 0;
+  color: #2b1007;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 /* Стили для галереи изображений по умолчанию */
 .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 .image-gallery img {
-    width: 150px; /* Фиксированная ширина для всех страниц, кроме page1 */
-    height: auto;
-    border-radius: 5px;
+  width: 150px; /* Фиксированная ширина для всех страниц, кроме page1 */
+  height: auto;
+  border-radius: 5px;
 }
 
 /* Специфичные стили для галереи на странице page1.html */
 #page1 .image-gallery img {
-    width: auto; /* Автоматическая ширина только для page1 */
-    height: auto;
+  width: auto; /* Автоматическая ширина только для page1 */
+  height: auto;
 }

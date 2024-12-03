@@ -13,7 +13,6 @@ async function getProducts() {
   displayProducts(allProducts);  
 }
 
-
 // Функция для отображения карточек товаров
 function displayProducts(products) {
   const productList = document.getElementById('product-list');
