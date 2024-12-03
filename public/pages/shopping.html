@@ -11,10 +11,6 @@
 
   <body>
     <div id="holly"></div>
-
-    <!-- Код JS загружает навиг меню из внешнего файла nav.html и 
-  вставляет его внутрь div#holly. для удобства, чтобы изменения в навигации сразу применялись ко всем страницам.  -->
-
     <script>
       // загружает файл nav.html с навигацией через асинхронный запрос.
       fetch("../nav.html")
@@ -34,26 +30,27 @@
         });
     </script>
 
-    <body>
-      <header>
-        <h1>Store</h1>
-        <div class="search-sort-wrapper">
-          <input type="text" id="search" placeholder="Поиск по товарам..." />
-          <select id="sort">
-            <option value="default">Сортировать по</option>
-            <option value="price-asc">Цена: от дешевых к дорогим</option>
-            <option value="price-desc">Цена: от дорогих к дешевым</option>
-            <option value="name-asc">По названию (A-Z)</option>
-            <option value="name-desc">По названию (Z-A)</option>
-          </select>
-        </div>
-      </header>
+    <h1>Store</h1>
+    <div class="search-sort-wrapper">
+      <input type="text" id="search" placeholder="Поиск по товарам..." />
+      <select id="sort">
+        <option value="default">Сортировать по</option>
+        <option value="price-asc">Цена: от дешевых к дорогим</option>
+        <option value="price-desc">Цена: от дорогих к дешевым</option>
+        <option value="name-asc">По названию (A-Z)</option>
+        <option value="name-desc">По названию (Z-A)</option>
+      </select>
+    </div>
 
-      <main>
-        <div id="product-list" class="product-list"></div>
-      </main>
+    <div class="card-body">
+ 
+      <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+          <input name="q" type="hidden" value="search">
+          <input type="Submit" value="В корзину">
+      </form>
 
-      <script src="/js/script.js"></script>
-    </body>
+    <div id="product-list" class="product-gallery"></div>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>

@@ -128,6 +128,7 @@ footer {
   background-color: #fff69b;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Сделать контейнер адаптивным */
 }
 
 /* Поле поиска */
@@ -165,8 +166,176 @@ footer {
   font-family: "Arial", sans-serif;
 }
 
+/* Медиазапросы для адаптации */
+@media (max-width: 768px) {
+  .search-sort-wrapper {
+    flex-direction: column; /* Расположение элементов по вертикали */
+    max-width: 90%; /* Сделать контейнер шире на мобильных устройствах */
+    gap: 10px; /* Меньше промежуток между полем поиска и выпадающим списком */
+  }
+
+  .search-sort-wrapper input[type="text"],
+  .search-sort-wrapper select {
+    width: 100%; /* Поля ввода и селект заполняют доступную ширину */
+    font-size: 1rem; /* Уменьшить размер шрифта для мобильных */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-sort-wrapper {
+    padding: 8px; /* Уменьшить отступы на очень маленьких экранах */
+  }
+
+  .search-sort-wrapper input[type="text"],
+  .search-sort-wrapper select {
+    font-size: 0.9rem; /* Еще меньше размер шрифта */
+    padding: 8px; /* Уменьшить отступы внутри элементов */
+  }
+}
+
+/* Стиль контейнера */
+.search-sort-wrapper {
+  font-family: "Arial", sans-serif;
+}
+
 /* Специфичные стили для страницы page1 */
 #page1 .image-gallery img {
   width: auto; /* Автоматическая ширина */
   height: auto;
+}
+
+/* Gallery container styles */
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center the gallery */
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 1200px; /* Optional: max width for the gallery */
+}
+
+/* Стиль для карточек товаров */
+.product-card {
+  width: calc(25% - 20px); /* 4 товара в ряду */
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.product-card img {
+  width: 100%; /* Изображение заполняет всю ширину карточки */
+  height: 200px; /* Фиксированная высота для всех изображений */
+  object-fit: cover; /* Сохраняет пропорции, обрезая изображение, чтобы оно вписалось */
+  border-radius: 5px;
+}
+/* Стиль для блока с количеством и кнопкой "Заказать" */
+.product-card .order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Стиль для поля ввода количества */
+.product-card .order input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
+  border: 2px solid #ff5d62;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Стиль для поля ввода при фокусе */
+.product-card .order input[type="number"]:focus {
+  border-color: #e265aa;
+}
+
+/* Стиль для кнопки "Заказать" */
+.product-card .order button {
+  background-color: #ff5d62; /* Цвет фона кнопки */
+  color: white; /* Цвет текста */
+  font-size: 1rem; /* Размер шрифта */
+  font-weight: bold; /* Жирный шрифт */
+  border: none; /* Убираем стандартную рамку */
+  border-radius: 5px; /* Скругленные углы */
+  padding: 8px 20px; /* Отступы внутри кнопки */
+  cursor: pointer; /* Курсор в виде руки при наведении */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Плавные эффекты */
+  display: inline-block;
+  text-align: center;
+}
+
+/* Эффект при наведении на кнопку */
+.product-card .order button:hover {
+  background-color: #e265aa; /* Темный оттенок фона при наведении */
+  transform: scale(1.05); /* Легкое увеличение кнопки */
+}
+
+/* Эффект при фокусе на кнопке */
+.product-card .order button:focus {
+  outline: none; /* Убираем стандартную рамку при фокусе */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Добавляем тень вокруг кнопки при фокусе */
+}
+
+/* Медиазапросы для адаптации */
+@media (max-width: 1200px) {
+  .product-card {
+    width: calc(33.33% - 20px); /* 3 товара в ряду */
+  }
+}
+
+@media (max-width: 800px) {
+  .product-card {
+    width: calc(50% - 20px); /* 2 товара в ряду */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%; /* 1 товар в ряду на маленьких экранах */
+  }
+}
+/* Стиль для формы */
+#UserEnter {
+  display: flex;
+  justify-content: center; /* Центрирует содержимое по горизонтали */
+  align-items: center; /* Центрирует содержимое по вертикали */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Стиль для кнопки "В корзину" */
+#UserEnter input[type="Submit"] {
+  background-color: #ff5d62; /* Цвет фона кнопки */
+  color: white; /* Цвет текста */
+  font-size: 1.2rem; /* Размер шрифта */
+  font-weight: bold; /* Жирный шрифт */
+  border: none; /* Убираем стандартную рамку */
+  border-radius: 5px; /* Скругленные углы */
+  padding: 12px 30px; /* Отступы внутри кнопки */
+  cursor: pointer; /* Курсор в виде руки при наведении */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Плавные эффекты */
+  display: inline-block;
+  text-align: center;
+}
+
+/* Эффект при наведении на кнопку */
+#UserEnter input[type="Submit"]:hover {
+  background-color: #e265aa; /* Темный оттенок фона при наведении */
+  transform: scale(1.05); /* Легкое увеличение кнопки */
+}
+
+/* Эффект при фокусе на кнопке */
+#UserEnter input[type="Submit"]:focus {
+  outline: none; /* Убираем стандартную рамку при фокусе */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Добавляем тень вокруг кнопки при фокусе */
 }
