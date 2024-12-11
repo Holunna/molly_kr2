@@ -7,6 +7,6 @@ then launch app with the command:
 
 - node app.js
 
-go to http://localhost:3030 in your browser
+go to http://localhost:6969 in your browser
 
 сайт: https://holunna-fashion-660a07b4674e.herokuapp.com/
